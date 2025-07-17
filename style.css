@@ -1,0 +1,77 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 60px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #333;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #fefefe;
+}
+header p {
+  color: #aaa;
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+nav {
+  margin-top: 20px;
+}
+nav a {
+  color: #88c0d0;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+nav a:hover {
+  color: #b3e5fc;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 12px;
+}
+
+/* Contact Styling */
+#contact p {
+  font-size: 1.1rem;
+}

@@ -46,9 +46,10 @@ body {
   margin-top: 24px;
   font-size: 18px;
   line-height: 1.6;
-  color: white;
+  color: #cccccc; /* light grey instead of white */
   max-width: 520px;
 }
+
 
 /* Social Icon Buttons */
 .social-buttons {
@@ -60,31 +61,31 @@ body {
 .icon-btn {
   width: 50px;
   height: 50px;
-  background-color: transparent;
-  border: 2px solid #cccccc;
-  color: #cccccc;
+  background-color: white;
+  border-radius: 0; /* no rounded corners */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.icon-btn i {
-  font-size: 20px;
+.icon-btn img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: brightness(0) contrast(100%);
+  transition: filter 0.3s ease;
 }
 
 .icon-btn:hover {
-  background-color: #cccccc;
-  color: #000008;
-  border-color: #cccccc;
+  background-color: #cccccc9d;
 }
 
-/* Active (click) = solid white background */
 .icon-btn:active {
-  background-color: white;
-  color: #000008;
-  border-color: white;
+  background-color: #999999;
 }
 
 /* RIGHT SECTION */

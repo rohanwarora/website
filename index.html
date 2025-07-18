@@ -8,9 +8,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <!-- SECTION NAVIGATION INDICATOR -->
+  <div class="section-nav">
+    <div class="nav-indicator" data-section="hero">
+      <div class="nav-shape"></div>
+    </div>
+    <div class="nav-indicator" data-section="tech">
+      <div class="nav-shape"></div>
+    </div>
+    <div class="nav-indicator" data-section="timeline">
+      <div class="nav-shape"></div>
+    </div>
+    <div class="nav-indicator" data-section="projects">
+      <div class="nav-shape"></div>
+    </div>
+  </div>
 
   <!-- HERO SECTION -->
-  <div class="container">
+  <div class="container" id="hero">
     <div class="left-section">
       <div class="content-wrapper">
         <h1 class="title">Data<br/>Enthusiast.</h1>
@@ -143,138 +158,206 @@
     </div>
   </section>
 
-<!-- CAREER TIMELINE SECTION -->
-<section class="timeline-section">
-  <div class="timeline-container">
-    <div class="timeline-line"></div>
+  <!-- CAREER TIMELINE SECTION -->
+  <section class="timeline-section" id="timeline-section">
+    <h2 class="timeline-title">Work Experience</h2>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
 
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <div class="job-role"><b>Data Analytics Engineer Intern</b> <i>CarGurus</i></div>
-        <span class="date">Jun - Aug 2024</span>
-        <div class="skills-container">
-          <div class="skill-box">Python</div>
-          <div class="skill-box">SQL</div>
-          <div class="skill-box">dbt</div>
-          <div class="skill-box">Airflow</div>
-          <div class="skill-box">AWS</div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="job-role"><b>Data Analytics Engineer Intern</b> <i>CarGurus</i></div>
+          <span class="date">Jun - Aug 2024</span>
+          <div class="skills-container">
+            <div class="skill-box">Python</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">dbt</div>
+            <div class="skill-box">Airflow</div>
+            <div class="skill-box">AWS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="job-role"><b>Year Round Data Scientist Intern</b> <i>Federal Reserve Board</i></div>
+          <span class="date">May 2023 - May 2024</span>
+          <div class="skills-container">
+            <div class="skill-box">Python</div>
+            <div class="skill-box">RStudio</div>
+            <div class="skill-box">Tableau</div>
+            <div class="skill-box">Power BI</div>
+            <div class="skill-box">Excel</div>
+            <div class="skill-box">PowerPoint</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="job-role"><b>Honors Research Assistant</b> <i>GWU</i></div>
+          <span class="date">Oct 2022 - May 2023</span>
+          <div class="skills-container">
+            <div class="skill-box">RStudio</div>
+            <div class="skill-box">Excel</div>
+            <div class="skill-box">Stata</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="job-role"><b>Portfolio Manager</b> <i>GW Socially Responsible Investment Fund</i></div>
+          <span class="date">Sept 2022 - May 2025</span>
+          <div class="skills-container">
+            <div class="skill-box">Excel</div>
+            <div class="skill-box">PowerPoint</div>
+            <div class="skill-box">Data Visualization</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="job-role"><b>Success Coach</b> <i>AmeriCorps</i></div>
+          <span class="date">Aug 2020 - Jun 2021</span>
+          <div class="skills-container">
+            <div class="skill-box">Excel</div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="timeline-item right">
-      <div class="timeline-content">
-        <div class="job-role"><b>Year Round Data Scientist Intern</b> <i>Federal Reserve Board</i></div>
-        <span class="date">May 2023 - May 2024</span>
-        <div class="skills-container">
-          <div class="skill-box">Python</div>
-          <div class="skill-box">RStudio</div>
-          <div class="skill-box">Tableau</div>
-          <div class="skill-box">Power BI</div>
-          <div class="skill-box">Excel</div>
-          <div class="skill-box">PowerPoint</div>
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section" id="projects-section">
+    <div class="projects-container">
+      <h2 class="projects-title">Projects</h2>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3 class="project-title">Personalized Book Recommendations Using RAG</h3>
+          <div class="project-skills">
+            <span class="project-skill">Python</span>
+            <span class="project-skill">AI</span>
+            <span class="project-skill">RAG</span>
+            <span class="project-skill">Gradio</span>
+          </div>
+          <p class="project-description">
+            This project is a content-based book recommendation system that uses large language models to suggest titles based on user-inputted descriptions and emotional tone, rather than user history. Built with Python, LangChain, Hugging Face, and Gradio, it integrates zero-shot genre classification, sentiment analysis, and vector similarity search to deliver nuanced recommendations through an interactive web interface.
+          </p>
+          <a href="assets/projects/fed-analysis.pdf" class="project-button" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3 class="project-title">How Trump's Tweets Shaped FOREX Markets</h3>
+          <div class="project-skills">
+            <span class="project-skill">Python</span>
+            <span class="project-skill">AI</span>
+            <span class="project-skill">Econometrics</span>
+          </div>
+          <p class="project-description">
+            This project investigates the impact of Donald Trump's Twitter activity on short term foreign exchange market volatility during his presidency, employing high-frequency intraday data and utilizing the Anthropic Claude Sonnet model for tweet classification. Through OLS regression analysis and sentiment interaction terms, the research reveals significant correlations between Trump's tweets and currency volatility, demonstrating how social media communications from world leaders can create distinct information shocks in global financial markets.
+          </p>
+          <a href="assets/projects/cargurus-pipeline.pdf" class="project-button" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3 class="project-title">Shaping a Happier World: Regression Analysis on 2017 Happiness Report</h3>
+          <div class="project-skills">
+            <span class="project-skill">R-Studio</span>
+            <span class="project-skill">Regression Analysis</span>
+          </div>
+          <p class="project-description">
+            This project analyzed the 2017 World Happiness Report in R, examining the factors influencing happiness scores and variations across regions. The study utilized correlation matrices, box plots, regression analysis, and feature importance tests to identify that life expectancy, economic factors, and freedom were the most impactful variables on happiness scores, with regional variations observed in their correlations.
+          </p>
+          <a href="assets/projects/portfolio-analytics.pdf" class="project-button" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <h3 class="project-title">Multi-linear Regression Analysis: The Link Between Food Insecurity and Asthma</h3>
+          <div class="project-skills">
+            <span class="project-skill">Stata</span>
+            <span class="project-skill">Econometrics</span>
+          </div>
+          <p class="project-description">
+            Through logistic regression modeling in Stata, I analyzed 2018 National Health Interview Survey data to quantify the relationship between food insecurity and asthma prevalence in the US. By constructing control variables for income, family size, and regional factors, I identified a statistically significant positive correlation between food access limitations and asthma risk. I verified my findings through hypothesis testing and robustness checks, addressing potential endogeneity concerns to validate the observed relationship. 
+          </p>
+          <a href="assets/projects/ml-price-prediction.pdf" class="project-button" target="_blank">View Project</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <div class="job-role"><b>Honors Research Assistant</b> <i>GWU</i></div>
-        <span class="date">Oct 2022 - May 2023</span>
-        <div class="skills-container">
-          <div class="skill-box">RStudio</div>
-          <div class="skill-box">Excel</div>
-          <div class="skill-box">Stata</div>
-        </div>
-      </div>
-    </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('#hero, #tech-section, #timeline-section, #projects-section');
+      const navIndicators = document.querySelectorAll('.nav-indicator');
+      
+      // Create intersection observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Remove active class from all indicators
+            navIndicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            // Add active class to current section's indicator
+            const sectionId = entry.target.id;
+            let targetSection = sectionId;
+            
+            // Map section IDs to nav indicator data-section values
+            if (sectionId === 'hero') targetSection = 'hero';
+            else if (sectionId === 'tech-section') targetSection = 'tech';
+            else if (sectionId === 'timeline-section') targetSection = 'timeline';
+            else if (sectionId === 'projects-section') targetSection = 'projects';
+            
+            const activeIndicator = document.querySelector(`[data-section="${targetSection}"]`);
+            if (activeIndicator) {
+              activeIndicator.classList.add('active');
+            }
+          }
+        });
+      }, {
+        threshold: 0.3, // Trigger when 30% of section is visible
+        rootMargin: '-10% 0px -10% 0px' // Add some margin for better detection
+      });
 
-    <div class="timeline-item right">
-      <div class="timeline-content">
-        <div class="job-role"><b>Portfolio Manager</b> <i>GW Socially Responsible Investment Fund</i></div>
-        <span class="date">Sept 2022 - May 2025</span>
-        <div class="skills-container">
-          <div class="skill-box">Excel</div>
-          <div class="skill-box">PowerPoint</div>
-          <div class="skill-box">Data Visualization</div>
-        </div>
-      </div>
-    </div>
+      // Observe all sections
+      sections.forEach(section => {
+        observer.observe(section);
+      });
 
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <div class="job-role"><b>Success Coach</b> <i>AmeriCorps</i></div>
-        <span class="date">Aug 2020 - Jun 2021</span>
-        <div class="skills-container">
-          <div class="skill-box">Excel</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      // Add click functionality to navigate to sections
+      navIndicators.forEach(indicator => {
+        indicator.addEventListener('click', function() {
+          const sectionName = this.dataset.section;
+          let targetId = sectionName;
+          
+          // Map nav indicator data-section to actual section IDs
+          if (sectionName === 'hero') targetId = 'hero';
+          else if (sectionName === 'tech') targetId = 'tech-section';
+          else if (sectionName === 'timeline') targetId = 'timeline-section';
+          else if (sectionName === 'projects') targetId = 'projects-section';
+          
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Initialize - set first section as active
+      if (navIndicators.length > 0) {
+        navIndicators[0].classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>
-
-<!-- PROJECTS SECTION -->
-<section class="projects-section">
-  <div class="projects-container">
-    <h2 class="projects-title">Projects</h2>
-    
-    <div class="projects-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <h3 class="project-title">Personalized Book Recommendations Using RAG</h3>
-        <div class="project-skills">
-          <span class="project-skill">Python</span>
-          <span class="project-skill">AI</span>
-          <span class="project-skill">RAG</span>
-          <span class="project-skill">Gradio</span>
-        </div>
-        <p class="project-description">
-          This project is a content-based book recommendation system that uses large language models to suggest titles based on user-inputted descriptions and emotional tone, rather than user history. Built with Python, LangChain, Hugging Face, and Gradio, it integrates zero-shot genre classification, sentiment analysis, and vector similarity search to deliver nuanced recommendations through an interactive web interface.
-        </p>
-        <a href="assets/projects/fed-analysis.pdf" class="project-button" target="_blank">View Project</a>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <h3 class="project-title">How Trump's Tweets Shaped FOREX Markets</h3>
-        <div class="project-skills">
-          <span class="project-skill">Python</span>
-          <span class="project-skill">AI</span>
-          <span class="project-skill">Econometrics</span>
-        </div>
-        <p class="project-description">
-          This project investigates the impact of Donald Trump’s Twitter activity on short term foreign exchange market volatility during his presidency, employing high-frequency intraday data and utilizing the Anthropic Claude Sonnet model for tweet classification. Through OLS regression analysis and sentiment interaction terms, the research reveals significant correlations between Trump’s tweets and currency volatility, demonstrating how social media communications from world leaders can create distinct information shocks in global financial markets.
-        </p>
-        <a href="assets/projects/cargurus-pipeline.pdf" class="project-button" target="_blank">View Project</a>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card">
-        <h3 class="project-title">Shaping a Happier World: Regression Analysis on 2017 Happiness Report</h3>
-        <div class="project-skills">
-          <span class="project-skill">R-Studio</span>
-          <span class="project-skill">Regression Analysis</span>
-        </div>
-        <p class="project-description">
-          This project analyzed the 2017 World Happiness Report in R, examining the factors influencing happiness scores and variations across regions. The study utilized correlation matrices, box plots, regression analysis, and feature importance tests to identify that life expectancy, economic factors, and freedom were the most impactful variables on happiness scores, with regional variations observed in their correlations.
-        </p>
-        <a href="assets/projects/portfolio-analytics.pdf" class="project-button" target="_blank">View Project</a>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project-card">
-        <h3 class="project-title">Multi-linear Regression Analysis: The Link Between Food Insecurity and Asthma</h3>
-        <div class="project-skills">
-          <span class="project-skill">Stata</span>
-          <span class="project-skill">Econometrics</span>
-        </div>
-        <p class="project-description">
-          Through logistic regression modeling in Stata, I analyzed 2018 National Health Interview Survey data to quantify the relationship between food insecurity and asthma prevalence in the US. By constructing control variables for income, family size, and regional factors, I identified a statistically significant positive correlation between food access limitations and asthma risk. I verified my findings through hypothesis testing and robustness checks, addressing potential endogeneity concerns to validate the observed relationship. 
-        </p>
-        <a href="assets/projects/ml-price-prediction.pdf" class="project-button" target="_blank">View Project</a>
-      </div>
-    </div>
-  </div>
-</section>

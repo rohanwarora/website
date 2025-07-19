@@ -8,6 +8,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <!-- HAMBURGER MENU -->
+  <div class="hamburger-menu">
+    <button class="hamburger-button" id="hamburgerToggle">
+      <span class="hamburger-line line1"></span>
+      <span class="hamburger-line line2"></span>
+    </button>
+    
+    <div class="dropdown-menu" id="dropdownMenu">
+      <nav class="dropdown-nav">
+        <a href="#hero" class="dropdown-link">Skills/Knowledge</a>
+        <a href="#tech-section" class="dropdown-link">Work Experience</a>
+        <a href="#timeline-section" class="dropdown-link">Projects</a>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-section">
+          <h4 class="dropdown-section-title">CONTACT</h4>
+          <a href="mailto:hello@olaqlu.dev" class="dropdown-contact">hello@olaqlu.dev</a>
+          <a href="#" class="dropdown-contact">t.me/mrolaqlu</a>
+        </div>
+        <div class="dropdown-section">
+          <div class="social-links">
+            <a href="#" class="social-link">TW</a>
+            <a href="#" class="social-link">GH</a>
+            <a href="#" class="social-link">LN</a>
+            <a href="#" class="social-link">YT</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
   <!-- SECTION NAVIGATION INDICATOR -->
   <div class="section-nav">
     <div class="nav-indicator" data-section="hero">
@@ -295,6 +325,36 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Hamburger menu functionality
+      const hamburgerToggle = document.getElementById('hamburgerToggle');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+
+      hamburgerToggle.addEventListener('click', function() {
+        hamburgerToggle.classList.toggle('active');
+        dropdownMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      // Close menu when clicking on dropdown links
+      const dropdownLinks = document.querySelectorAll('.dropdown-link');
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburgerToggle.classList.remove('active');
+          dropdownMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!hamburgerToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+          hamburgerToggle.classList.remove('active');
+          dropdownMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        }
+      });
+
+      // Section navigation functionality
       const sections = document.querySelectorAll('#hero, #tech-section, #timeline-section, #projects-section');
       const navIndicators = document.querySelectorAll('.nav-indicator');
       

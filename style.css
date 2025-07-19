@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* === HAMBURGER MENU === */
 .hamburger-menu {
   position: fixed;
   top: 30px;
@@ -34,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end; /* Right align the lines */
+  align-items: flex-end;
   position: relative;
   z-index: 2001;
 }
@@ -46,44 +45,41 @@ body {
   position: absolute;
 }
 
-/* Two lines with different lengths, right-aligned */
 .hamburger-line.line1 {
-  width: 50px; /* Longer top line */
+  width: 50px;
   top: 16px;
-  right: 0; /* Right-aligned */
+  right: 0;
   transform-origin: center;
 }
 
 .hamburger-line.line2 {
-  width: 40px; /* Shorter bottom line */
+  width: 40px;
   top: 30px;
-  right: 0; /* Right-aligned */
+  right: 0;
   transform-origin: center;
 }
 
-/* X transformation - both lines meet in the center */
 .hamburger-button.active .hamburger-line.line1 {
   transform: rotate(45deg);
   top: 20px;
-  right: 7.5px; /* Center the line */
-  width: 25px; /* Same width for X */
+  right: 7.5px;
+  width: 25px;
 }
 
 .hamburger-button.active .hamburger-line.line2 {
   transform: rotate(-45deg);
   top: 20px;
-  right: 7.5px; /* Center the line */
-  width: 25px; /* Same width for X */
+  right: 7.5px;
+  width: 25px;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
   position: absolute;
   top: -15px;
   right: -15px;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  border-radius: 0; /* Square corners */
+  border-radius: 0;
   padding: 60px 30px 30px 30px;
   min-width: 250px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -107,20 +103,20 @@ body {
 }
 
 .dropdown-link {
-  color: #666; /* Changed from #333 to match dropdown-contact */
+  color: #666;
   text-decoration: none;
-  font-size: 16px; /* Changed from 16px to match dropdown-contact */
-  font-weight: 400; /* Changed from 500 to match dropdown-contact */
-  display: block; /* Added to match dropdown-contact */
-  margin-bottom: 8px; /* Added to match dropdown-contact */
-  padding: 0; /* Removed padding */
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+  padding: 0;
   transition: color 0.3s ease;
   border: none;
   background: none;
 }
 
 .dropdown-link:hover {
-  color: #333; /* Changed from #666 to match dropdown-contact hover */
+  color: #333;
   text-decoration: underline;
 }
 
@@ -165,12 +161,10 @@ body {
   display: none;
 }
 
-/* Prevent scrolling when menu is open */
 body.menu-open {
   overflow: hidden;
 }
 
-/* === SECTION NAVIGATION INDICATOR === */
 .section-nav {
   position: fixed;
   right: 75px;
@@ -199,22 +193,19 @@ body.menu-open {
   position: relative;
 }
 
-/* Default state - filled diamond (dark grey) */
 .nav-indicator .nav-shape {
   background-color: #666;
   transform: rotate(45deg);
   border-radius: 0;
 }
 
-/* Active state - hollow square (no rounded edges) */
 .nav-indicator.active .nav-shape {
   background-color: transparent;
   border: 2px solid #666;
   transform: rotate(0deg);
-  border-radius: 0; /* Square edges */
+  border-radius: 0;
 }
 
-/* Hover effects */
 .nav-indicator:hover .nav-shape {
   transform: scale(1.2) rotate(45deg);
 }
@@ -553,7 +544,7 @@ body.menu-open {
 }
 
 .timeline-title {
-  font-size: clamp(22px, 3.5vw, 28px); /* Same as section-title */
+  font-size: clamp(22px, 3.5vw, 28px); 
   font-weight: 800;
   text-align: center;
   color: white;
@@ -687,7 +678,7 @@ body.menu-open {
 }
 
 .projects-title {
-  font-size: clamp(22px, 3.5vw, 28px); /* Same as section-title */
+  font-size: clamp(22px, 3.5vw, 28px);
   font-weight: 800;
   text-align: center;
   color: #000;
@@ -696,7 +687,7 @@ body.menu-open {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Changed to single column */
+  grid-template-columns: 1fr;
   gap: 30px;
   max-width: 800px;
   margin: 0 auto;
@@ -706,13 +697,13 @@ body.menu-open {
 .project-card {
   background-color: #ffffff;
   border: 2px solid #e0e0e0;
-  border-radius: 0; /* Removed rounded edges */
+  border-radius: 0;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  min-height: 250px; /* Reduced height since they're stacked */
+  min-height: 250px;
   width: 100%;
-  max-width: 800px; /* Increased max width */
+  max-width: 800px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
@@ -724,7 +715,7 @@ body.menu-open {
 }
 
 .project-title {
-  font-size: 18px; /* Kept smaller than section titles */
+  font-size: 18px;
   font-weight: 700;
   color: #000;
   margin-bottom: 15px;
@@ -760,26 +751,27 @@ body.menu-open {
   background-color: #000;
   color: #fff;
   padding: 12px 24px;
-  border: none;
-  border-radius: 0; /* Removed rounded edges */
+  border: 2px solid #000;  
+  border-radius: 0;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
   cursor: pointer;
   align-self: flex-start;
 }
 
 .project-button:hover {
-  background-color: #333;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .project-button:active {
-  background-color: #555;
+  background-color: #ccc;
 }
 
-/* Responsive breakpoints */
 @media screen and (max-width: 1200px) {
   .quadrant-wrapper {
     width: 95%;
@@ -912,7 +904,7 @@ body.menu-open {
   }
   
   .project-title {
-    font-size: 16px; /* Smaller on mobile */
+    font-size: 16px;
   }
   
   .project-description {

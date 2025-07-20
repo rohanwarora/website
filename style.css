@@ -40,20 +40,20 @@ body {
 
 .hamburger-line {
   height: 2px;
-  background-color: #666;
+  background-color: #3271a5;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: absolute;
 }
 
 .hamburger-line.line1 {
-  width: 50px;
+  width: 60px;
   top: 16px;
   right: 0;
   transform-origin: center;
 }
 
 .hamburger-line.line2 {
-  width: 40px;
+  width: 50px;
   top: 30px;
   right: 0;
   transform-origin: center;
@@ -194,14 +194,14 @@ body.menu-open {
 }
 
 .nav-indicator .nav-shape {
-  background-color: #666;
+  background-color: #3271a5;
   transform: rotate(45deg);
   border-radius: 0;
 }
 
 .nav-indicator.active .nav-shape {
   background-color: transparent;
-  border: 2px solid #666;
+  border: 2px solid #3271a5;
   transform: rotate(0deg);
   border-radius: 0;
 }
@@ -285,7 +285,7 @@ body.menu-open {
 }
 
 .icon-btn:active {
-  background-color: #999999;
+  background-color: #3271a5;
 }
 
 .scroll-indicator {
@@ -393,7 +393,7 @@ body.menu-open {
 .staircase-behind .stair,
 .staircase-behind-right .stair {
   position: absolute;
-  background-color: #cccccc;
+  background-color: #3271a5;
 }
 
 .stair-1 { width: 12px; height: 2px; left: 0px; bottom: 0px; }
@@ -522,7 +522,7 @@ body.menu-open {
 
 .staircase .stair {
   position: absolute;
-  background-color: black;
+  background-color: #3271a5;
 }
 
 .staircase .stair-1 { width: 12px; height: 2px; left: 0px; bottom: 0px; }
@@ -654,11 +654,11 @@ body.menu-open {
   padding: 4px 8px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
-  color: #434343;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  color: #3271a5;
+  background-color: #cccccc;
+  border: 1px solid #3271a5;
   white-space: nowrap;
 }
 
@@ -731,12 +731,12 @@ body.menu-open {
 
 .project-skill {
   padding: 4px 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #d0d0d0;
+  background-color: #cccccc;
+  border: 1px solid #3271a5;
   border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
-  color: #333;
+  color: #3271a5;
 }
 
 .project-description {
@@ -763,7 +763,7 @@ body.menu-open {
 }
 
 .project-button:hover {
-  background-color: #fff;
+  background-color: #3271a5;
   color: #000;
   border: 2px solid #000;
 }
